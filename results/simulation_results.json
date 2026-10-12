@@ -1,0 +1,303 @@
+{
+  "summary": {
+    "simulations": 12,
+    "duration_s": 300,
+    "static_total_throughput": 2114,
+    "adaptive_total_throughput": 2412,
+    "throughput_gain_pct": 14.1,
+    "static_avg_wait_s": 64.75,
+    "adaptive_avg_wait_s": 62.58,
+    "static_idle_green_s": 87.2,
+    "adaptive_idle_green_s": 25.0
+  },
+  "runs": [
+    {
+      "sim": 1,
+      "rates_veh_per_s": {
+        "north": 0.709,
+        "east": 0.138,
+        "south": 0.222,
+        "west": 0.189
+      },
+      "static": {
+        "controller": "static",
+        "throughput": 202,
+        "avg_wait_s": 71.97524752475248,
+        "idle_green_s": 63.0,
+        "remaining_queue": 205
+      },
+      "adaptive": {
+        "controller": "adaptive",
+        "throughput": 224,
+        "avg_wait_s": 72.92857142857143,
+        "idle_green_s": 14.0,
+        "remaining_queue": 183
+      },
+      "throughput_gain_pct": 10.89
+    },
+    {
+      "sim": 2,
+      "rates_veh_per_s": {
+        "north": 0.6,
+        "east": 0.615,
+        "south": 0.076,
+        "west": 0.14
+      },
+      "static": {
+        "controller": "static",
+        "throughput": 197,
+        "avg_wait_s": 77.3248730964467,
+        "idle_green_s": 67.0,
+        "remaining_queue": 231
+      },
+      "adaptive": {
+        "controller": "adaptive",
+        "throughput": 245,
+        "avg_wait_s": 80.6,
+        "idle_green_s": 11.0,
+        "remaining_queue": 183
+      },
+      "throughput_gain_pct": 24.37
+    },
+    {
+      "sim": 3,
+      "rates_veh_per_s": {
+        "north": 0.632,
+        "east": 0.139,
+        "south": 0.095,
+        "west": 0.474
+      },
+      "static": {
+        "controller": "static",
+        "throughput": 199,
+        "avg_wait_s": 85.41708542713567,
+        "idle_green_s": 64.0,
+        "remaining_queue": 219
+      },
+      "adaptive": {
+        "controller": "adaptive",
+        "throughput": 238,
+        "avg_wait_s": 81.05042016806723,
+        "idle_green_s": 12.0,
+        "remaining_queue": 180
+      },
+      "throughput_gain_pct": 19.6
+    },
+    {
+      "sim": 4,
+      "rates_veh_per_s": {
+        "north": 0.202,
+        "east": 0.121,
+        "south": 0.659,
+        "west": 0.617
+      },
+      "static": {
+        "controller": "static",
+        "throughput": 195,
+        "avg_wait_s": 92.46153846153847,
+        "idle_green_s": 69.0,
+        "remaining_queue": 277
+      },
+      "adaptive": {
+        "controller": "adaptive",
+        "throughput": 235,
+        "avg_wait_s": 92.78297872340426,
+        "idle_green_s": 18.0,
+        "remaining_queue": 237
+      },
+      "throughput_gain_pct": 20.51
+    },
+    {
+      "sim": 5,
+      "rates_veh_per_s": {
+        "north": 0.059,
+        "east": 0.081,
+        "south": 0.187,
+        "west": 0.495
+      },
+      "static": {
+        "controller": "static",
+        "throughput": 142,
+        "avg_wait_s": 72.67605633802818,
+        "idle_green_s": 115.0,
+        "remaining_queue": 96
+      },
+      "adaptive": {
+        "controller": "adaptive",
+        "throughput": 168,
+        "avg_wait_s": 64.39880952380952,
+        "idle_green_s": 46.0,
+        "remaining_queue": 70
+      },
+      "throughput_gain_pct": 18.31
+    },
+    {
+      "sim": 6,
+      "rates_veh_per_s": {
+        "north": 0.124,
+        "east": 0.432,
+        "south": 0.088,
+        "west": 0.228
+      },
+      "static": {
+        "controller": "static",
+        "throughput": 166,
+        "avg_wait_s": 52.10843373493976,
+        "idle_green_s": 98.0,
+        "remaining_queue": 78
+      },
+      "adaptive": {
+        "controller": "adaptive",
+        "throughput": 184,
+        "avg_wait_s": 52.32608695652174,
+        "idle_green_s": 31.0,
+        "remaining_queue": 60
+      },
+      "throughput_gain_pct": 10.84
+    },
+    {
+      "sim": 7,
+      "rates_veh_per_s": {
+        "north": 0.137,
+        "east": 0.559,
+        "south": 0.491,
+        "west": 0.112
+      },
+      "static": {
+        "controller": "static",
+        "throughput": 192,
+        "avg_wait_s": 60.317708333333336,
+        "idle_green_s": 77.0,
+        "remaining_queue": 190
+      },
+      "adaptive": {
+        "controller": "adaptive",
+        "throughput": 233,
+        "avg_wait_s": 76.19742489270386,
+        "idle_green_s": 11.0,
+        "remaining_queue": 149
+      },
+      "throughput_gain_pct": 21.35
+    },
+    {
+      "sim": 8,
+      "rates_veh_per_s": {
+        "north": 0.323,
+        "east": 0.186,
+        "south": 0.078,
+        "west": 0.27
+      },
+      "static": {
+        "controller": "static",
+        "throughput": 182,
+        "avg_wait_s": 68.58241758241758,
+        "idle_green_s": 82.0,
+        "remaining_queue": 72
+      },
+      "adaptive": {
+        "controller": "adaptive",
+        "throughput": 191,
+        "avg_wait_s": 54.8586387434555,
+        "idle_green_s": 24.0,
+        "remaining_queue": 63
+      },
+      "throughput_gain_pct": 4.95
+    },
+    {
+      "sim": 9,
+      "rates_veh_per_s": {
+        "north": 0.415,
+        "east": 0.206,
+        "south": 0.142,
+        "west": 0.164
+      },
+      "static": {
+        "controller": "static",
+        "throughput": 163,
+        "avg_wait_s": 61.47852760736196,
+        "idle_green_s": 97.0,
+        "remaining_queue": 84
+      },
+      "adaptive": {
+        "controller": "adaptive",
+        "throughput": 175,
+        "avg_wait_s": 44.12571428571429,
+        "idle_green_s": 31.0,
+        "remaining_queue": 72
+      },
+      "throughput_gain_pct": 7.36
+    },
+    {
+      "sim": 10,
+      "rates_veh_per_s": {
+        "north": 0.184,
+        "east": 0.409,
+        "south": 0.463,
+        "west": 0.203
+      },
+      "static": {
+        "controller": "static",
+        "throughput": 213,
+        "avg_wait_s": 56.25352112676056,
+        "idle_green_s": 60.0,
+        "remaining_queue": 147
+      },
+      "adaptive": {
+        "controller": "adaptive",
+        "throughput": 233,
+        "avg_wait_s": 65.16309012875537,
+        "idle_green_s": 7.0,
+        "remaining_queue": 127
+      },
+      "throughput_gain_pct": 9.39
+    },
+    {
+      "sim": 11,
+      "rates_veh_per_s": {
+        "north": 0.111,
+        "east": 0.184,
+        "south": 0.137,
+        "west": 0.093
+      },
+      "static": {
+        "controller": "static",
+        "throughput": 147,
+        "avg_wait_s": 41.46938775510204,
+        "idle_green_s": 113.0,
+        "remaining_queue": 35
+      },
+      "adaptive": {
+        "controller": "adaptive",
+        "throughput": 164,
+        "avg_wait_s": 30.3109756097561,
+        "idle_green_s": 30.0,
+        "remaining_queue": 18
+      },
+      "throughput_gain_pct": 11.56
+    },
+    {
+      "sim": 12,
+      "rates_veh_per_s": {
+        "north": 0.097,
+        "east": 0.062,
+        "south": 0.301,
+        "west": 0.109
+      },
+      "static": {
+        "controller": "static",
+        "throughput": 116,
+        "avg_wait_s": 36.991379310344826,
+        "idle_green_s": 142.0,
+        "remaining_queue": 35
+      },
+      "adaptive": {
+        "controller": "adaptive",
+        "throughput": 122,
+        "avg_wait_s": 36.18852459016394,
+        "idle_green_s": 65.0,
+        "remaining_queue": 29
+      },
+      "throughput_gain_pct": 5.17
+    }
+  ]
+}
