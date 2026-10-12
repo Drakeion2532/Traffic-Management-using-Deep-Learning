@@ -1,0 +1,13 @@
+# Geometry for data/sample/cars.mp4 (1280x720). Copy & edit for your own camera.
+conf: 0.3
+imgsz: 640
+# region of interest polygon (only vehicles whose centre is inside are used)
+roi: [[0, 720], [0, 560], [420, 200], [700, 200], [700, 720]]
+# virtual counting line
+count_line: {y: 400, x1: 150, x2: 700}
+# lanes split along the counting line (left -> right)
+lanes:
+  - {name: lane_1, x_min: 150, x_max: 290}
+  - {name: lane_2, x_min: 290, x_max: 430}
+  - {name: lane_3, x_min: 430, x_max: 560}
+  - {name: lane_4, x_min: 560, x_max: 700}

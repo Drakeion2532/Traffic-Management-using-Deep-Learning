@@ -1,0 +1,20 @@
+{
+  "video": "data/sample/cars.mp4",
+  "frames": 368,
+  "processing_fps": 7.49,
+  "total_counted": 63,
+  "per_lane": {
+    "lane_2": {
+      "car": 21,
+      "bus": 1,
+      "truck": 1
+    },
+    "lane_3": {
+      "car": 21
+    },
+    "lane_4": {
+      "car": 19
+    }
+  },
+  "peak_in_roi": 9
+}
