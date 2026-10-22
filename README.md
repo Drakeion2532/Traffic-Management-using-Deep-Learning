@@ -45,7 +45,25 @@ CCTV / video ──► YOLOv8 detection ──► ByteTrack IDs ──► line-c
 
 ![simulation](docs/simulation_results.png)
 
-The roughly 14% throughput gain matches the ≈15% improvement over static control reported in the paper's simulations. Average wait barely moves (−3%): the adaptive timer mainly stops wasting green on empty approaches, while queues on the busiest approach still build up. Changing the phase *order* by demand, not just the durations, is the obvious next step.
+The roughly 14% throughput gain matches the ≈15% improvement over static control reported in the paper's simulations. Average wait barely moves (−3%): the adaptive timer mainly stops wasting green on empty approaches, while queues on the busiest approach still build up. Changing the phase *order* by demand, not just the durations, helps further; see 1b.
+
+### 1b. Counting every vehicle, and a smarter phase order (beyond the paper)
+
+The paper's wait metric only counts vehicles that got through. Cars still stuck in the queue when the 5 minutes end are left out, and those are exactly the worst waits. Counting **every** vehicle (`avg_delay_all_s`) is the fairer number for commuters, and it shows the camera-based timer helps far more than the 3% above:
+
+| Over 12 runs | Static 30 s | Adaptive (paper) | **Demand-ordered** |
+|---|---|---|---|
+| Vehicles crossed | 2,114 | 2,412 (+14.1%) | **2,450 (+15.9%)** |
+| Avg. delay, every vehicle | 68.5 s | 59.2 s (−14%) | **54.3 s (−21%)** |
+| Left queued at the end (avg/run) | 139 | 114 | **111** |
+| Longest red with cars waiting | 99 s | 118 s | 114 s |
+
+**Demand-ordered** (`--controller demand` in `simulate`) keeps the paper's camera-based green durations, but it also chooses **which approach goes next**:
+
+* **Busiest first:** the next green goes to the approach with the most detected traffic (in PCU), and empty approaches are skipped.
+* **No starvation:** no approach with waiting vehicles is meant to sit on red for more than 90 s. The current green is cut short (after the 10 s minimum) when someone is about to pass that limit. When two approaches become overdue together, the second still waits a little longer, so the worst case observed was 114 s.
+
+The paper keeps a fixed phase order, which some junctions need for driver expectations or pedestrian phases, so its controller is unchanged and its numbers above are reproduced exactly.
 
 ### 2. Real video
 
