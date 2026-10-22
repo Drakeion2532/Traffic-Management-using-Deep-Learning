@@ -1,10 +1,12 @@
 # AI-Powered Traffic Optimization with YOLOv8
 
+[![tests](https://github.com/Drakeion2532/Traffic-Management-using-Deep-Learning/actions/workflows/tests.yml/badge.svg)](https://github.com/Drakeion2532/Traffic-Management-using-Deep-Learning/actions/workflows/tests.yml)
+
 Real-time vehicle detection, tracking, lane-wise counting and **adaptive traffic-signal timing** from ordinary CCTV footage.
 
 This is the reference implementation of the paper
-**"AI-Powered Traffic Optimization with YOLOv8 Object Detection"** by
-S. Phatangare, R. Sakpal, S. Khan, **S. Punde**, S. Kasurde (Vishwakarma Institute of Technology, Pune). *(Add the IEEE Xplore DOI link here.)*
+**["Real-Time Traffic Management Using Deep Learning and Object Detection using YOLOv8"](https://ieeexplore.ieee.org/document/10725412)** (IEEE ICCCNT 2024) by
+S. Phatangare, R. Sakpal, S. Khan, **S. Punde**, S. Kasurde (Vishwakarma Institute of Technology, Pune).
 
 ![demo](docs/demo.gif)
 
@@ -39,17 +41,17 @@ CCTV / video ──► YOLOv8 detection ──► ByteTrack IDs ──► line-c
 |---|---|---|
 | Vehicles crossed (12 runs) | 2,114 | **2,412 (+14.1%)** |
 | Avg. idle green per run | 87.2 s | **25.0 s (−71%)** |
-| Avg. wait per vehicle | 64.8 s | 62.6 s |
+| Avg. wait per vehicle | 64.8 s | 62.6 s (−3%) |
 
 ![simulation](docs/simulation_results.png)
 
-The roughly 14% throughput gain matches the ≈15% improvement over static control reported in the paper's simulations.
+The roughly 14% throughput gain matches the ≈15% improvement over static control reported in the paper's simulations. Average wait barely moves (−3%): the adaptive timer mainly stops wasting green on empty approaches, while queues on the busiest approach still build up. Changing the phase *order* by demand, not just the durations, is the obvious next step.
 
 ### 2. Real video
 
 `python -m traffic_ai.video_pipeline` on `data/sample/cars.mp4` (1280×720, 368 frames):
 
-* 63 vehicles counted across 4 lanes (cars, bus, truck), with per-lane breakdown in `results/video_summary.json`
+* 63 vehicles counted across 3 lanes (cars, bus, truck), with per-lane breakdown in `results/video_summary.json`
 * ~7.5 FPS with `yolov8n` on a 2-core CPU, no GPU. A GPU or `yolov8s/m` gives real-time speed and higher accuracy.
 
 ## Quick start
