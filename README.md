@@ -58,7 +58,7 @@ The paper's wait metric only counts vehicles that got through. Cars still stuck 
 | Left queued at the end (avg/run) | 139 | 114 | **111** |
 | Longest red with cars waiting | 99 s | 118 s | 114 s |
 
-**Demand-ordered** (`--controller demand` in `simulate`) keeps the paper's camera-based green durations, but it also chooses **which approach goes next**:
+**Demand-ordered** (`simulate("demand", ...)` in `traffic_ai/simulation.py`, included in `python -m traffic_ai.simulation`) keeps the paper's camera-based green durations, but it also chooses **which approach goes next**:
 
 * **Busiest first:** the next green goes to the approach with the most detected traffic (in PCU), and empty approaches are skipped.
 * **No starvation:** no approach with waiting vehicles is meant to sit on red for more than 90 s. The current green is cut short (after the 10 s minimum) when someone is about to pass that limit. When two approaches become overdue together, the second still waits a little longer, so the worst case observed was 114 s.
