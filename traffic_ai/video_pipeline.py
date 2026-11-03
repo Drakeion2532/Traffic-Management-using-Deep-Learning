@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Shubhan Punde · https://github.com/Drakeion2532/Traffic-Management-using-Deep-Learning · MIT licence · sp2532-58c94846b019
 """YOLOv8 + ByteTrack video pipeline.
 
 For each frame:

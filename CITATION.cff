@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use or adapt this work, please credit it as below and keep the copyright notice."
+title: "Real-Time Traffic Management with YOLOv8"
+type: software
+authors:
+  - family-names: Punde
+    given-names: Shubhan
+    email: shubhanpunde@gmail.com
+repository-code: "https://github.com/Drakeion2532/Traffic-Management-using-Deep-Learning"
+license: MIT
+date-released: "2026-11-03"
+identifiers:
+  - type: other
+    value: "sp2532-58c94846b019"
+    description: "Project identifier"
+references:
+  - type: conference-paper
+    title: "Real-Time Traffic Management Using Deep Learning and Object Detection using YOLOv8"
+    authors:
+      - name: "S. Phatangare"
+      - name: "R. Sakpal"
+      - name: "S. Khan"
+      - name: "S. Punde"
+      - name: "S. Kasurde"
+    conference:
+      name: "2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT)"
+    doi: "10.1109/ICCCNT61001.2024.10725412"
+    year: 2024

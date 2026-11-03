@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Shubhan Punde · https://github.com/Drakeion2532/Traffic-Management-using-Deep-Learning · MIT licence · sp2532-58c94846b019
 from traffic_ai.signal_timer import AdaptiveSignalTimer, SignalTimerConfig
 from traffic_ai.simulation import simulate, run_benchmark, APPROACHES
 

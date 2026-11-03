@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Shubhan Punde · https://github.com/Drakeion2532/Traffic-Management-using-Deep-Learning · MIT licence · sp2532-58c94846b019
 """Headless 4-way intersection simulator: static timer vs adaptive timer.
 
 Mirrors the paper's evaluation protocol: 12 simulations of 5 minutes each,
