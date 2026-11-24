@@ -9,10 +9,6 @@ authors:
 repository-code: "https://github.com/Drakeion2532/Traffic-Management-using-Deep-Learning"
 license: MIT
 date-released: "2026-11-03"
-identifiers:
-  - type: other
-    value: "sp2532-58c94846b019"
-    description: "Project identifier"
 references:
   - type: conference-paper
     title: "Real-Time Traffic Management Using Deep Learning and Object Detection using YOLOv8"
