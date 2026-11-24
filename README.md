@@ -129,9 +129,16 @@ results/              generated outputs
 tests/                pytest suite
 ```
 
+## Limits
+
+* The throughput and delay results come from a simulation in which the camera detects queued vehicles with 90% recall, not from a live junction.
+* The video demo is a single 368-frame clip; its vehicle counts have not been compared with a hand count.
+* `yolov8n` runs at about 7.5 FPS on a 2-core CPU; real-time use at a junction needs a GPU or an edge accelerator.
+* The junction model has four approaches; pedestrian phases and emergency-vehicle priority are not modelled.
+
 ## How this was built
 
-I designed the detection logic, threat model and evaluation, and used AI pair-programming (Claude Code) for implementation. Every number in this README was re-run and checked, and the test suite reproduces the key results.
+This repository re-implements our co-authored paper. I designed the approach, features and evaluation (baselines, data splits and metrics), and used AI pair-programming (Claude Code) for implementation. Every number in this README was re-run and checked, and the test suite reproduces the key results.
 
 ## Licence
 
